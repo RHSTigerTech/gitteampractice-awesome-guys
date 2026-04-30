@@ -29,6 +29,7 @@ public class Grid {
 
         //Add Foes that you would need to battle or interact with...
         kingdom[1][2].addFoe(new Foe("Guart", 7));
+        kingdom[1][1].addFoe(new Foe("The Throngler", 200));
 
 
     }
