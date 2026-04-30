@@ -25,11 +25,12 @@ public class Grid {
         kingdom[1][0].addItem(new Treasure("Coin", 5));
 
         kingdom[1][2].addItem(new Treasure("Key", 50));
+        kingdom[1][1].addItem(new Treasure("The Throngler", 200));
 
 
         //Add Foes that you would need to battle or interact with...
         kingdom[1][2].addFoe(new Foe("Guart", 7));
-        kingdom[1][1].addFoe(new Foe("The Throngler", 200));
+        kingdom[1][1].addFoe(new Foe("Blingle Horse", 10));
 
 
     }
@@ -37,12 +38,16 @@ public class Grid {
     
     //add an Item to a random place on the grid
     public void addItemToPlace(Item i) {
-        //needs implementation
+      int randY = (int) (Math.random() * kingdom.length);
+      int randX = (int) (Math.random() * kingdom[randY].length);
+      kingdom[randY][randX].addItem(i);
     }
     
     //add an Item to a random place on the grid
     public void addFoeToPlace(Foe f) {
-        //needs implementation
+      int randY = (int) (Math.random() * kingdom.length);
+      int randX = (int) (Math.random() * kingdom[randY].length);
+      kingdom[randY][randX].addFoe(f);
     }
     
     public void listPlace(int r, int c) {
