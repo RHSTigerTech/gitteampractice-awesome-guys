@@ -23,6 +23,8 @@ public class Grid {
         // Add some items in rooms that need Items...
         kingdom[0][2].addItem(new Treasure("Purse", 10));
         kingdom[1][0].addItem(new Treasure("Coin", 5));
+        kingdom[1][3].addItem(new Treasure("Rat",10000));
+        kingdom[1][3].addFoe(new Foe("Rat King",999999999));
 
         kingdom[1][2].addItem(new Treasure("Key", 50));
         kingdom[1][1].addItem(new Treasure("The Throngler", 200));
