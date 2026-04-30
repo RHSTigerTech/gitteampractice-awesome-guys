@@ -26,6 +26,8 @@ public class Grid {
 
         kingdom[1][2].addItem(new Treasure("Key", 50));
 
+        kingdom[0][2].addItem(new Treasure("Succulent Chinese Meal", 100));
+
 
         //Add Foes that you would need to battle or interact with...
         kingdom[1][2].addFoe(new Foe("Guart", 7));
