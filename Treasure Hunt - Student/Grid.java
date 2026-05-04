@@ -26,6 +26,8 @@ public class Grid {
         kingdom[1][3].addItem(new Treasure("Rat",10000));
         kingdom[1][3].addFoe(new Foe("Rat King",999999999));
         kingdom[1][0].addItem(new Treasure("A steak.",1));
+        kingdom[1][0].addItem(new Treasure("fat juicy rat",1));
+
         
 
         kingdom[1][2].addItem(new Treasure("Key", 50));
